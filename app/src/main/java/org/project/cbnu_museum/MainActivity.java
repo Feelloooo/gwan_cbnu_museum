@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.test3
         };
 
-        v_fllipper = findViewById(R.id.image_slide);
-        for(int image : images) {
-            fllipperImages(image);
-        }
+//        v_fllipper = findViewById(R.id.image_slide);
+//        for(int image : images) {
+//            fllipperImages(image);
+//        }
 
     }
     public void fllipperImages(int image) {
