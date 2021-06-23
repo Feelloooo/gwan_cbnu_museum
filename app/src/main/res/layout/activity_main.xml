@@ -22,7 +22,7 @@
             <ViewFlipper
                 android:id="@+id/image_slide"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="match_parent"
                 />
 
         </androidx.cardview.widget.CardView>
@@ -69,5 +69,4 @@
 
 
     </LinearLayout>
-
 </LinearLayout>
