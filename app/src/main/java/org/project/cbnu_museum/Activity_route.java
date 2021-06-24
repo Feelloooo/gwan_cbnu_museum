@@ -41,7 +41,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
     }
     @Override
     public void onCalloutBalloonOfPOIItemTouched(MapView mapView, MapPOIItem mapPOIItem) {
-        String uri = "kakaomap://look?p=" + "8117063";
+        String uri = "kakaomap://place?id=8117063";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
         startActivity(intent);
     }
