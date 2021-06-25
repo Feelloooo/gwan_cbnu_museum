@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //actionbar에 로고
         getSupportActionBar().setIcon(R.drawable.actionbar_logo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         //hashkey발급
         //getHashKey();
 
+        //메인화면 이미지
         int images[] = {
                 R.drawable.main_img1,
                 R.drawable.main_img2,
@@ -36,8 +38,19 @@ public class MainActivity extends AppCompatActivity {
             fllipperImages(image);
         }
 
-        Button button = findViewById(R.id.menu5);
-        button.setOnClickListener(new View.OnClickListener() {
+        //층별안내
+        Button button2 = findViewById(R.id.menu2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Activity_floor_info.class);
+                startActivity(intent);
+            }
+        });
+
+        //오시는길
+        Button button5 = findViewById(R.id.menu5);
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Activity_route.class);

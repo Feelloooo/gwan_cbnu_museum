@@ -21,6 +21,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route);
 
+        //actionbar
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("오시는 길");
 
@@ -42,6 +43,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
         mapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(36.62775104579331, 127.45535206324857), 2, true);
         mapView.setPOIItemEventListener(this);
 
+        //전화걸기 아이콘
         Button button1 = findViewById(R.id.direction_phone);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
                 startActivity(intent);
             }
         });
+        //자동차 길찾기 아이콘
         Button button2 = findViewById(R.id.direction_car);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +62,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
                 startActivity(intent);
             }
         });
+        //대중교통 길찾기 아이콘
         Button button3 = findViewById(R.id.direction_bus);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +72,7 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
                 startActivity(intent);
             }
         });
+        //도보 길찾기 아이콘
         Button button4 = findViewById(R.id.direction_walk);
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
