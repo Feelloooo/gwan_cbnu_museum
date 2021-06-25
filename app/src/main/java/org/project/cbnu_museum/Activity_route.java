@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
 import net.daum.mf.map.api.*;
 
 public class Activity_route extends AppCompatActivity implements MapView.POIItemEventListener {
@@ -32,6 +35,42 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
 
         mapView.setMapCenterPointAndZoomLevel(MapPoint.mapPointWithGeoCoord(36.62775104579331, 127.45535206324857), 2, true);
         mapView.setPOIItemEventListener(this);
+
+        Button button1 = findViewById(R.id.direction_phone);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+"043-261-2902"));
+                startActivity(intent);
+            }
+        });
+        Button button2 = findViewById(R.id.direction_car);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String uri = "kakaomap://route?sp=&ep=" + "36.62775104579331, 127.45535206324857" + "&by=CAR";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
+            }
+        });
+        Button button3 = findViewById(R.id.direction_bus);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String uri = "kakaomap://route?sp=&ep=" + "36.62775104579331, 127.45535206324857" + "&by=PUBLICTRANSIT";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
+            }
+        });
+        Button button4 = findViewById(R.id.direction_walk);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String uri = "kakaomap://route?sp=&ep=" + "36.62775104579331, 127.45535206324857" + "&by=FOOT";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(intent);
+            }
+        });
 
     }
 

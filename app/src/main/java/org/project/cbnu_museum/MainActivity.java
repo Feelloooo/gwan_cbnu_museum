@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             fllipperImages(image);
         }
 
-        Button button1 = findViewById(R.id.menu5);
-        button1.setOnClickListener(new View.OnClickListener() {
+        Button button = findViewById(R.id.menu5);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Activity_route.class);
