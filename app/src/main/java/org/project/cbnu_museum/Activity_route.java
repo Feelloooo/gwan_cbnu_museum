@@ -1,7 +1,5 @@
 package org.project.cbnu_museum;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import net.daum.mf.map.api.*;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import net.daum.mf.map.api.MapPOIItem;
+import net.daum.mf.map.api.MapPoint;
+import net.daum.mf.map.api.MapView;
 
 public class Activity_route extends AppCompatActivity implements MapView.POIItemEventListener {
 
@@ -17,6 +20,9 @@ public class Activity_route extends AppCompatActivity implements MapView.POIItem
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("오시는 길");
 
         //mapview
         MapView mapView = new MapView(this);
