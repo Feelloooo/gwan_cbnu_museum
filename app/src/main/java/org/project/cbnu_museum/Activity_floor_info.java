@@ -15,6 +15,8 @@ public class Activity_floor_info extends AppCompatActivity {
     private WebView mWebView; // 웹뷰 선언
     private WebSettings mWebSettings; //웹뷰세팅
 
+    int frame_index=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,8 @@ public class Activity_floor_info extends AppCompatActivity {
             public void onClick(View view) {
                 setContentView(R.layout.webview);
                 mWebView = (WebView) findViewById(R.id.webView);
+
+                frame_index = 1;    //뒤로가기 버튼을 위한 index를 설정
 
                 mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
                 mWebSettings = mWebView.getSettings(); //세부 세팅 등록
@@ -54,6 +58,8 @@ public class Activity_floor_info extends AppCompatActivity {
                 setContentView(R.layout.webview);
                 mWebView = (WebView) findViewById(R.id.webView);
 
+                frame_index = 1;
+
                 mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
                 mWebSettings = mWebView.getSettings(); //세부 세팅 등록
                 mWebSettings.setJavaScriptEnabled(true); // 웹페이지 자바스클비트 허용 여부
@@ -71,6 +77,19 @@ public class Activity_floor_info extends AppCompatActivity {
             }
         });
 
-
     }
+
+    @Override
+    public void onBackPressed() {
+        //웹뷰에서 뒤로가기로 누르면 이전화면으로 이동
+        if(frame_index == 1){
+            setContentView(R.layout.activity_floor_info);
+            frame_index = 0;
+        }
+        //선택화면인 경우 main_activity로 이동
+        else{
+            super.onBackPressed();
+        }
+    }
+
 }
