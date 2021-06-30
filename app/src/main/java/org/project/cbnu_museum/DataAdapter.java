@@ -8,14 +8,13 @@ import android.util.Log;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class DataAdapter
 {
     protected static final String TAG = "DataAdapter";
 
     // TODO : TABLE 이름을 명시해야함
-    protected static final String TABLE_NAME = "table_test";
+    protected static final String TABLE_NAME = "heritage1";
 
     private final Context mContext;
     private SQLiteDatabase mDb;
@@ -62,7 +61,7 @@ public class DataAdapter
         mDbHelper.close();
     }
 
-    public List getTableData()
+    public ArrayList getTableData()
     {
         try
         {
@@ -70,7 +69,7 @@ public class DataAdapter
             String sql ="SELECT * FROM " + TABLE_NAME;
 
             // 모델 넣을 리스트 생성
-            List userList = new ArrayList();
+            ArrayList userList = new ArrayList();
 
             // TODO : 모델 선언
             User user = null;

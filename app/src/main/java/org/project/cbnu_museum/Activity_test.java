@@ -13,11 +13,11 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
+import java.util.ArrayList;
 
 public class Activity_test extends AppCompatActivity {
 
-    public List<User> userList;
+    public ArrayList<User> userList;
     ImageView imageView1, imageView2, imageView3, imageView4;
 
     Bitmap bitmap1, bitmap2, bitmap3, bitmap4;
