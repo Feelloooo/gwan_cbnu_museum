@@ -16,10 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cbnu_museum"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity_floor_2"
-            android:parentActivityName=".Activity_floor_info"/>
-        <activity android:name=".Activity_floor_1"
-            android:parentActivityName=".Activity_floor_info"/>
+        <activity android:name=".Activity_test"></activity>
+        <activity
+            android:name=".Activity_floor_2"
+            android:parentActivityName=".Activity_floor_info" />
+        <activity
+            android:name=".Activity_floor_1"
+            android:parentActivityName=".Activity_floor_info" />
         <activity
             android:name=".Activity_floor_info"
             android:parentActivityName=".MainActivity" />

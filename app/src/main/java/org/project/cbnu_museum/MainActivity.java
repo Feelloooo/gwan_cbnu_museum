@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
             fllipperImages(image);
         }
 
+        Button button1 = findViewById(R.id.menu1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Activity_test.class);
+                startActivity(intent);
+            }
+        });
+
         //층별안내
         Button button2 = findViewById(R.id.menu2);
         button2.setOnClickListener(new View.OnClickListener() {
