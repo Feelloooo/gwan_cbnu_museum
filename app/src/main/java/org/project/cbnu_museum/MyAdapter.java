@@ -15,11 +15,11 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     Context c;
-    ArrayList<User> user;
+    ArrayList<Heritage> heritage;
 
-    public MyAdapter(Context c, ArrayList<User> user) {
+    public MyAdapter(Context c, ArrayList<Heritage> heritage) {
         this.c = c;
-        this.user = user;
+        this.heritage = heritage;
     }
 
     @NonNull
@@ -32,9 +32,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull final MyHolder holder, int position) {
-        holder.mTitle.setText(user.get(position).getName());
-        holder.mDes.setText(user.get(position).getDescription());
-        Glide.with(holder.mImaeView).load(user.get(position).getAddress()).into(holder.mImaeView);
+        holder.mTitle.setText(heritage.get(position).getName());
+        holder.mDes.setText(heritage.get(position).getDescription());
+        Glide.with(holder.mImaeView).load(heritage.get(position).getAddress()).into(holder.mImaeView);
 //        holder.mImaeView.setImageResource(Glide.with(Activity_heritage.this).load(user.get(position).getAddress()));
 //        Glide.with().load(userList.get(2).getAddress()).into(iv);
 
@@ -69,6 +69,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     @Override
     public int getItemCount() {
-        return user.size();
+        return heritage.size();
     }
 }

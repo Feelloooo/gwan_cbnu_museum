@@ -37,20 +37,20 @@ public class Frag_heritage1 extends Fragment {
         return view;
     }
 
-    private ArrayList<User> getMylist() {
-        ArrayList<User> user = new ArrayList<>();
+    private ArrayList<Heritage> getMylist() {
+        ArrayList<Heritage> heritage = new ArrayList<>();
 
         DataAdapter mDbHelper = new DataAdapter(getContext());
         mDbHelper.createDatabase();
         mDbHelper.open();
 
         // db에 있는 값들을 model을 적용해서 넣는다.
-        user = mDbHelper.getTableData();
+        heritage = mDbHelper.getTableData1();
 
         // db 닫기
         mDbHelper.close();
 
-        return user;
+        return heritage;
     }
 
 }

@@ -2,6 +2,7 @@ package org.project.cbnu_museum;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -16,6 +17,10 @@ public class Activity_heritage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heritage);
+
+        //actionbar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("소장유물");
 
 
         ViewPager viewPager = findViewById(R.id.viewPager);
