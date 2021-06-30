@@ -87,6 +87,7 @@ public class DataAdapter
                     // id, name, account, privateKey, secretKey, Comment
                     user.setName(mCur.getString(0));
                     user.setAddress(mCur.getString(1));
+                    user.setDescription(mCur.getString(2));
 
                     // 리스트에 넣기
                     userList.add(user);
