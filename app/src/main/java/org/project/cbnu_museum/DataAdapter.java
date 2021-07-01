@@ -89,6 +89,9 @@ public class DataAdapter
                     heritage.setName(mCur.getString(0));
                     heritage.setAddress(mCur.getString(1));
                     heritage.setDescription(mCur.getString(2));
+                    heritage.setEra(mCur.getString(3));
+                    heritage.setPlace(mCur.getString(4));
+                    heritage.setDetail(mCur.getString(5));
 
                     // 리스트에 넣기
                     userList.add(heritage);
@@ -131,6 +134,9 @@ public class DataAdapter
                     heritage.setName(mCur.getString(0));
                     heritage.setAddress(mCur.getString(1));
                     heritage.setDescription(mCur.getString(2));
+                    heritage.setEra(mCur.getString(3));
+                    heritage.setPlace(mCur.getString(4));
+                    heritage.setDetail(mCur.getString(5));
 
                     // 리스트에 넣기
                     userList.add(heritage);
