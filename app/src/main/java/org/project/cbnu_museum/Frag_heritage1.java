@@ -18,11 +18,13 @@ public class Frag_heritage1 extends Fragment {
     RecyclerView recyclerView;
     MyAdapter myAdapter;
 
+
     public static Frag_heritage1 newInstance(){
 
         Frag_heritage1 frag_heritage1 = new Frag_heritage1();
         return frag_heritage1;
     }
+
 
     @Nullable
     @Override

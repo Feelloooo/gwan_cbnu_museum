@@ -9,7 +9,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class Activity_heritage extends AppCompatActivity {
+public class Activity_heritage extends AppCompatActivity{
 
     private FragmentPagerAdapter fragmentPagerAdapter;
 
@@ -31,4 +31,5 @@ public class Activity_heritage extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
+
 }

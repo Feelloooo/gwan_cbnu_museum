@@ -52,4 +52,5 @@ public class Frag_heritage2 extends Fragment {
 
         return heritage;
     }
+
 }

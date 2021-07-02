@@ -39,8 +39,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
         holder.mTitle.setText(heritage.get(position).getName());
         holder.mDes.setText(heritage.get(position).getDescription());
         Glide.with(holder.mImaeView).load(heritage.get(position).getAddress()).into(holder.mImaeView);
-//        holder.mImaeView.setImageResource(Glide.with(Activity_heritage.this).load(user.get(position).getAddress()));
-//        Glide.with().load(userList.get(2).getAddress()).into(iv);
 
         //click event
         holder.setItemClickListener(new ItemClickListener() {
@@ -80,4 +78,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
     public int getItemCount() {
         return heritage.size();
     }
+
+
 }
