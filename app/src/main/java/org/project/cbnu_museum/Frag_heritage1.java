@@ -1,12 +1,17 @@
 package org.project.cbnu_museum;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,9 +23,9 @@ public class Frag_heritage1 extends Fragment {
     RecyclerView recyclerView;
     MyAdapter myAdapter;
 
+    SearchView searchView;
 
     public static Frag_heritage1 newInstance(){
-
         Frag_heritage1 frag_heritage1 = new Frag_heritage1();
         return frag_heritage1;
     }
@@ -35,6 +40,8 @@ public class Frag_heritage1 extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         myAdapter = new MyAdapter(getContext(), getMylist());
         recyclerView.setAdapter(myAdapter);
+
+        setHasOptionsMenu(true);    //바꾼거ㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓ
 
         return view;
     }
@@ -55,4 +62,33 @@ public class Frag_heritage1 extends Fragment {
         return heritage;
     }
 
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+
+        inflater.inflate(R.menu.menu, menu);
+
+        SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
+        searchView = (SearchView) menu.findItem(R.id.action_search)
+                .getActionView();
+        searchView.setSearchableInfo(searchManager
+                .getSearchableInfo(getActivity().getComponentName()));
+        searchView.setMaxWidth(Integer.MAX_VALUE);
+        // listening to search query text change
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // filter recycler view when query submitted
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String query) {
+                // filter recycler view when text is changed
+                myAdapter.getFilter().filter(query);
+                return false;
+            }
+        });
+
+    }
 }

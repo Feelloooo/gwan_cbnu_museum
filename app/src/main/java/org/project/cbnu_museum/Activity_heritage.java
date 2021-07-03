@@ -13,6 +13,7 @@ public class Activity_heritage extends AppCompatActivity{
 
     private FragmentPagerAdapter fragmentPagerAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +32,7 @@ public class Activity_heritage extends AppCompatActivity{
         tabLayout.setupWithViewPager(viewPager);
 
     }
+
+
 
 }
