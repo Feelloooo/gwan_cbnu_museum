@@ -101,11 +101,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> implements Filtera
                         }
 
                     }
-//                    for(int i = 0; i<heritage.size(); i++){
-//                        if(heritage.get(i).getName().toLowerCase().contentEquals(charString.toLowerCase())){
-//                            filteredList.add(heritage.get(i));
-//                        }
-//                    }
                     heritage_filtered = filteringList;
                 }
                 FilterResults filterResults = new FilterResults();

@@ -16,8 +16,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cbnu_museum"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity_detail"
-            android:parentActivityName=".Activity_heritage"></activity>
+        <activity android:name=".Activity_intro_3"></activity>
+        <activity android:name=".Activity_intro_5"
+            android:parentActivityName=".Activity_intro"/>
+        <activity
+            android:name=".Activity_intro_1"
+            android:parentActivityName=".Activity_intro" />
+        <activity
+            android:name=".Activity_intro"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity_detail"
+            android:parentActivityName=".Activity_heritage" />
         <activity
             android:name=".Activity_heritage"
             android:parentActivityName=".MainActivity" />
@@ -37,9 +47,11 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="0c63c50487677125e885189eb0b5696a" />

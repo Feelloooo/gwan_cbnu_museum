@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_intro_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/gray_200">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="관장인사말"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:background="@drawable/sub_title_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="안녕하십니까?"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="충북대학교 박물관을 방문해 주셔서 감사드리며 진심으로 환영합니다."
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginVertical="7dp"
+                    android:background="@color/gray_500" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1970년 9월 27일 개관한 박물관은 중원문화의 실체규명을 위한 학술조사와 연구, 국제학술교류 및 평생교육을 중점적으로 실시하여 대학박물관으로서의 기능과 역할에 충실하고 있습니다.\n\n
+소장유물은 보물 제716호 『김길통좌리공신교서(金吉通佐理功臣敎書)』와 중요민속문화재 5건 286점 등 동산문화재7,500여점 및 구석기시대 유물 30,000여점을 소장하고 있습니다. 특히 구석기시대의 다양한 유물과 조선시대 복식유물은 우리 박물관의 상징이라 할 수 있습니다.\n\n
+이 유물들은 2개의 전시실에 상설전시하고 있으며, 주기적으로 특별전을 개최하여 소장유물을 공개하고 있습니다.\n\n
+우리 박물관은 앞으로 모든 사람들이 참여할 수 있는 열린 문화공간, 열린 학습공간을 만들어 가도록 열정을 가지고 노력하겠습니다.\n\n
+여러분의 애정과 관심을 기대합니다.\n\n"
+                    android:textColor="@color/gray_500"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

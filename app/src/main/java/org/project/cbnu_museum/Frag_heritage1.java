@@ -22,10 +22,10 @@ public class Frag_heritage1 extends Fragment {
     private View view;
     RecyclerView recyclerView;
     MyAdapter myAdapter;
-
     SearchView searchView;
 
     public static Frag_heritage1 newInstance(){
+
         Frag_heritage1 frag_heritage1 = new Frag_heritage1();
         return frag_heritage1;
     }
@@ -41,7 +41,7 @@ public class Frag_heritage1 extends Fragment {
         myAdapter = new MyAdapter(getContext(), getMylist());
         recyclerView.setAdapter(myAdapter);
 
-        setHasOptionsMenu(true);    //바꾼거ㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓㅓ
+        setHasOptionsMenu(true);
 
         return view;
     }
@@ -74,6 +74,8 @@ public class Frag_heritage1 extends Fragment {
         searchView.setSearchableInfo(searchManager
                 .getSearchableInfo(getActivity().getComponentName()));
         searchView.setMaxWidth(Integer.MAX_VALUE);
+        searchView.setQueryHint("검색어를 입력하세요.");
+
         // listening to search query text change
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

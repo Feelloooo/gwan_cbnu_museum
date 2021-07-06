@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_intro_5"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="기증안내"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:background="@drawable/sub_title_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_200"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="충북대학교 박물관은 개인 및 단체가 소장하고 계신 문화재의 기증을 항상 기다리고 있습니다."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="기증받은 문화재는 영구히 보존될 수 있도록 적정의 환경에서 관리되며, 상설 및 특별전시, 학술연구에 활용되어 모든 사회구성원들과 함께 공유하게 됩니다.\n
+문화재 기증은 그 자체로서 매우 뜻깊은 일이며, 개인이 문화재를 관리함에 따라 발생할 수 있는 도난, 망실, 훼손 등으로부터 문화재를 보호하고, 공개 전시 및 연구를 통해 문화재의 가치를 더욱 빛나게 하는 소중한 일입니다."
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="&lt;기증대상물&gt;"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="- 고고출토품, 불교미술품, 도자기, 서화류, 고문서와 고서적, 민속공예품, 출토복식과 생활복식 등 문화재 자료 전반 및 근현대 미술작품"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"
+                android:text="&lt;기증 문화재의 처리&gt;"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginHorizontal="5dp"
+                android:text="- 박물관 소장품 등록 후 전시·연구·교육자료로 활용\n- 기증유물와 관련된 기획전이 개최될 경우 최우선적으로 전시\n- 기증유물의 수량, 가치 등을 고려하여 자료집 발간 및 특별전시 추진\n- 중요 자료의 국가문화재지정(국보, 보물, 도 문화재, 중요민속자료 등) 신청보존처리가 시급한 문화재는 자체 예산으로 복원수리"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingTop="10dp"
+                android:text="&lt;기증 문의처&gt;"
+                android:textColor="@color/purple_700"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1"
+                >
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="주소"
+                        android:textStyle="bold"
+                        android:background="@color/gray_200"
+                        android:padding="2dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="충청북도 청주시 서원구 충대로1\n충북대학교 박물관 학예연구실"/>
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="전화"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:background="@color/gray_200"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="043)261-2902 /3190"/>
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="FAX"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:background="@color/gray_200"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="043)273-0009"/>
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="E-mail"
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:background="@color/gray_200"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="museum@cbnu.ac.kr"/>
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="#FF909090" />
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

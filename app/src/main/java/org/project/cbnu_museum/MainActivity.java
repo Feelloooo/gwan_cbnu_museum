@@ -56,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button button3 = findViewById(R.id.menu3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Activity_intro.class);
+                startActivity(intent);
+            }
+        });
 
         //오시는길
         Button button5 = findViewById(R.id.menu5);
