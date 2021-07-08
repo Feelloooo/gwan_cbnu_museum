@@ -16,8 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cbnu_museum"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity_intro_4"
+        <activity android:name=".Activity_intro_2"
             android:parentActivityName=".Activity_intro"></activity>
+        <activity
+            android:name=".Activity_intro_4"
+            android:parentActivityName=".Activity_intro" />
         <activity
             android:name=".Activity_intro_3"
             android:parentActivityName=".Activity_intro" />

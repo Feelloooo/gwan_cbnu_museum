@@ -30,7 +30,7 @@
         android:layout_height="75dp"
         android:backgroundTint="@color/white"
         android:drawableRight="@drawable/ic_action_chevron_right"
-        android:text="박물관연혁"
+        android:text="역대관장"
         android:textSize="20sp"
         android:textColor="@color/gray_500"
         android:gravity="center_vertical"
