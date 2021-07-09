@@ -11,4 +11,5 @@
     <color name="gray_200">#E8E6E6</color>
     <color name="gray_500">#707070</color>
     <color name="ivory">#FBF7EA</color>
+    <color name="tfe_semi_transparent">#66000000</color>
 </resources>

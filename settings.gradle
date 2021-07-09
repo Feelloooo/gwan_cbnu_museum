@@ -1,2 +1,4 @@
+include ':lib_support'
+include ':models'
 include ':app'
 rootProject.name = "cbnu_museum"
