@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -17,6 +16,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -41,6 +42,9 @@ public class Frag_heritage2 extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         myAdapter = new MyAdapter(getContext(), getMylist());
         recyclerView.setAdapter(myAdapter);
+
+        FloatingActionButton fab = view.findViewById(R.id.floating_1);
+        fab.setOnClickListener(new FABClickListener());
 
         setHasOptionsMenu(true);
 
@@ -67,7 +71,7 @@ public class Frag_heritage2 extends Fragment {
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
 
-        inflater.inflate(R.menu.menu_1, menu);
+        inflater.inflate(R.menu.menu, menu);
 
 
         SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
@@ -96,14 +100,22 @@ public class Frag_heritage2 extends Fragment {
 
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if(id == R.id.action_camera)
-        {
+    private class FABClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
             Intent intent = new Intent(getActivity(), ClassifierActivity.class);
             startActivity(intent);
         }
-        return super.onOptionsItemSelected(item);
     }
+
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        int id = item.getItemId();
+//        if(id == R.id.action_camera)
+//        {
+//            Intent intent = new Intent(getActivity(), ClassifierActivity.class);
+//            startActivity(intent);
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }

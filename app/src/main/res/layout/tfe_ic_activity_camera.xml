@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="\n카메라에 이미지를 인식시켜 주세요."
+                android:text="\n카메라에 문화재를 인식시켜 주세요."
                 android:textColor="#FFF"/>
         </androidx.appcompat.widget.Toolbar>
 
