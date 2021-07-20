@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_program_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:text="CBNU\nGO! GO! 고고학!"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:background="@drawable/img_pro_2"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;프로그램 주요내용&gt;"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="10dp"
+                android:text="- 박물관 전시실을 통한 우리나라 역사 및 유물 이해
+\n- 고고학 전공 학부 및 대학원생과 중학생과의 멘토활동을 통해 역사문화에 대한 이해도를 높이고 더 많은 관심을 가질 수 있도록 유도함
+\n- 고고학자 및 학예연구사 등 관련 직업 체험 제공"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;프로그램 일정&gt;"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/purple_700"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp"
+                android:stretchColumns="0,1,2">
+                <View
+                    android:layout_height="2dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_200"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="시간"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_200"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="제목"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_200"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="내용"
+                        android:textStyle="bold" />
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/ivory"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="13:00~13:30"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="인사해요!"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="만나서 반갑습니다\n– 서로 인사나누기"
+                        />
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/ivory"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="13:30~15:00"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="박물관 투어!"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="전시실에서 만나요\n- 학예연구사 선생님\n(활동지 학습)"
+                        />
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/ivory"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="15:00~15:30"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="선사시대 생활 체험"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="내가 만드는 선사유물\n- 곡옥만들기, 불피우기, \n활쏘기"
+                        />
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/ivory"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="15:30~16:30"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="내가 고고학자!"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="발굴체험\n- 모형유구 발굴, 실측 체험"
+                        />
+                </TableRow>
+                <View
+                    android:layout_height="0.1dip"
+                    android:background="#FF909090" />
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/ivory"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="16:30~17:00"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="너의 꿈을 말해봐!"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="소감문 작성 \n및 발표"
+                        />
+                </TableRow>
+                <View
+                    android:layout_height="2dip"
+                    android:background="#FF909090" />
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="&lt;프로그램 신청방법&gt;"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/purple_700"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginHorizontal="10dp"
+                android:text="- 공문(충북대학교 박물관) 및 교육부 꿈길\n(http://www.ggoomgil.go.kr) 접수"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="프로그램 신청하러 가기"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

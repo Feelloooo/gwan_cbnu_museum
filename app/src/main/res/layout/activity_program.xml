@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_program"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/right_arrow"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:text="CBNU\n喜喜樂樂 박물관학교\n\n\n초등학생을 위한\n박물관 교육체험 프로그램입니다."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:background="@drawable/pro_1"
+        app:backgroundTint = "@null"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="박물관과 함께하는\nGO! GO! 고고학!\n\n\n자유학기제를 위한\n진로체험을
+포함한 중학생을 위한 프로그램입니다."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingStart="25dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/right_arrow"
+        android:background="@drawable/pro_2"
+        app:backgroundTint = "@null"
+        />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="CBNU\nHIGH 큐레이터\n\n\n고등학생을 위한\n박물관 교육체험 프로그램입니다."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingStart="25dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/right_arrow"
+        android:background="@drawable/pro_3"
+        app:backgroundTint = "@null"
+        />
+
+</LinearLayout>
