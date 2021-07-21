@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Activity_heritage.class);
+                Intent intent = new Intent(getApplicationContext(), Activity_intro.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Activity_program.class);
+                Intent intent = new Intent(getApplicationContext(), Activity_heritage.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Activity_intro.class);
+                Intent intent = new Intent(getApplicationContext(), Activity_floor_info.class);
                 startActivity(intent);
             }
         });
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ClassifierActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Activity_program.class);
                 startActivity(intent);
             }
         });
