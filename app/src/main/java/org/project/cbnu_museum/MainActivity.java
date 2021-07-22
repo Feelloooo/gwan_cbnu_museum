@@ -1,15 +1,21 @@
 package org.project.cbnu_museum;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private final long FINISH_INTERVAL_TIME = 2000;
+    private long backPressedTime = 0;
 
     ViewFlipper v_fllipper;
 
@@ -17,6 +23,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.custom_dialog);
+        dialog.show();
+
+        Button button = (Button) dialog.findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
 
         //actionbar에 로고
         getSupportActionBar().setIcon(R.drawable.actionbar_logo);
@@ -83,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
     public void fllipperImages(int image) {
         ImageView imageView = new ImageView(this);
@@ -95,6 +115,23 @@ public class MainActivity extends AppCompatActivity {
         // animation
         v_fllipper.setInAnimation(this,R.anim.slide_in_right);
         v_fllipper.setOutAnimation(this,R.anim.slide_out_left);
+    }
+
+    @Override
+    public void onBackPressed() {
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - backPressedTime;
+
+        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
+        {
+            super.onBackPressed();
+            ActivityCompat.finishAffinity(this);
+        }
+        else
+        {
+            backPressedTime = tempTime;
+            Toast.makeText(getApplicationContext(), "종료하시려면 뒤로가기를 눌러주세요.", Toast.LENGTH_SHORT).show();
+        }
     }
 
 //    hashkey발급

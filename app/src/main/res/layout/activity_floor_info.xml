@@ -29,13 +29,15 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="1층 전시관"/>
+            android:text="1층 전시관"
+            android:textSize="20sp"/>
         <Button
             android:id="@+id/second_floor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="2층 전시관"/>
+            android:text="2층 전시관"
+            android:textSize="20sp"/>
     </LinearLayout>
 
 </LinearLayout>

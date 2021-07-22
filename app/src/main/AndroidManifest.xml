@@ -19,12 +19,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cbnu_museum"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity_program_3"
-            android:parentActivityName=".Activity_program"></activity>
-        <activity android:name=".Activity_program_2"
-            android:parentActivityName=".Activity_program"/>
-        <activity android:name=".Activity_program_1"
-            android:parentActivityName=".Activity_program"/>
+
+        <activity
+            android:name=".Activity_loading"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity_program_3"
+            android:parentActivityName=".Activity_program" />
+        <activity
+            android:name=".Activity_program_2"
+            android:parentActivityName=".Activity_program" />
+        <activity
+            android:name=".Activity_program_1"
+            android:parentActivityName=".Activity_program" />
         <activity
             android:name=".Activity_program"
             android:parentActivityName=".MainActivity" />
@@ -68,12 +84,12 @@
             android:name=".ClassifierActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.SEARCH" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <action android:name="android.intent.action.SEARCH" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <meta-data
