@@ -1,22 +1,19 @@
 package org.project.cbnu_museum;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 public class MainActivity extends AppCompatActivity {
-
-    private final long FINISH_INTERVAL_TIME = 2000;
-    private long backPressedTime = 0;
-
+    
     ViewFlipper v_fllipper;
 
     @Override
@@ -119,40 +116,51 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        long tempTime = System.currentTimeMillis();
-        long intervalTime = tempTime - backPressedTime;
-
-        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
-        {
-            super.onBackPressed();
-            ActivityCompat.finishAffinity(this);
-        }
-        else
-        {
-            backPressedTime = tempTime;
-            Toast.makeText(getApplicationContext(), "종료하시려면 뒤로가기를 눌러주세요.", Toast.LENGTH_SHORT).show();
-        }
+        showDialog();
     }
 
-//    hashkey발급
-//        private void getHashKey(){
-//            PackageInfo packageInfo = null;
-//            try {
-//                packageInfo = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
-//            } catch (PackageManager.NameNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//            if (packageInfo == null)
-//                Log.e("KeyHash", "KeyHash:null");
-//
-//            for (Signature signature : packageInfo.signatures) {
-//                try {
-//                    MessageDigest md = MessageDigest.getInstance("SHA");
-//                    md.update(signature.toByteArray());
-//                    Log.d("KeyHash", Base64.encodeToString(md.digest(), Base64.DEFAULT));
-//                } catch (NoSuchAlgorithmException e) {
-//                    Log.e("KeyHash", "Unable to get MessageDigest. signature=" + signature, e);
-//                }
-//            }
-//        }
+    void showDialog() {
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(MainActivity.this)
+                .setMessage("종료하시겠습니까?")
+                .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+                        MainActivity.super.onBackPressed();
+                    }
+                })
+                .setNegativeButton("취소", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+
+                    }
+                });
+        AlertDialog msgDlg = msgBuilder.create();
+        msgDlg.show();
+    }
+
+
+    /*hashkey발급
+        private void getHashKey(){
+            PackageInfo packageInfo = null;
+            try {
+                packageInfo = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+            if (packageInfo == null)
+                Log.e("KeyHash", "KeyHash:null");
+
+            for (Signature signature : packageInfo.signatures) {
+                try {
+                    MessageDigest md = MessageDigest.getInstance("SHA");
+                    md.update(signature.toByteArray());
+                    Log.d("KeyHash", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                } catch (NoSuchAlgorithmException e) {
+                    Log.e("KeyHash", "Unable to get MessageDigest. signature=" + signature, e);
+                }
+            }
+        }*/
 }
