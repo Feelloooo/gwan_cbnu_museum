@@ -47,5 +47,7 @@ public class Activity_detail extends AppCompatActivity {
         mDescTv.setText(mDescription);
         mDetailTv.setText(mDetail);
         mImageIv.setImageBitmap(bitmap);
+
     }
+
 }

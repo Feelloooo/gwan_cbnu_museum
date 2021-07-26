@@ -97,6 +97,7 @@
                 android:layout_height="5px"
                 android:layout_marginTop="20dp"
                 android:background="@android:color/darker_gray" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,6 +105,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"/>
+
 
             <TextView
                 android:id="@+id/detail"
