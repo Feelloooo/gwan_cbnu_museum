@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Activity_detail"
     android:orientation="vertical">
-    
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:src="@drawable/des4"
+        android:scaleType="fitXY"
         />
 
     <ScrollView
@@ -24,20 +26,14 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="#FFF">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/s"
-                android:text="▶ 재생하기"/>
-
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="30sp"
-                android:textColor="#000"/>
+                android:textColor="#000"
+                android:text="간돌검"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +52,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="청동기시대"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,7 +73,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:text="충북 제천시 청풍면 황석리"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,7 +94,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="두루봉 처녀굴에서 출토된 구석기 시대 동굴곰 뼈 화석"/>
             </LinearLayout>
 
             <View
@@ -120,6 +119,10 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginTop="10dp"
+                android:text="남한강 상류의  충적대지에 2줄로 46기의 고인돌이 분포하고 있었으며 26기가 발굴되었는데 이 중 8기를
+수습하였다.유물은 사람뼈를 비롯하여 간돌검,돌도끼,화살촉,민무늬토기,붉은간토기와 짐승뼈,곡옥,대롱구슬
+등이 출토되었다.
+이곳 황석리 유적에서 출토된 선돌은 충북대학교박물관 야외에 전시되어 있다."
                 />
 
         </LinearLayout>

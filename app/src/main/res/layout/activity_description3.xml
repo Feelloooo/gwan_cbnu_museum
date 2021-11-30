@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Activity_detail"
     android:orientation="vertical">
-    
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:src="@drawable/des3"
+        android:scaleType="centerCrop"
         />
 
     <ScrollView
@@ -24,20 +26,14 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="#FFF">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/s"
-                android:text="▶ 재생하기"/>
-
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="30sp"
-                android:textColor="#000"/>
+                android:textColor="#000"
+                android:text="동굴곰"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +52,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="구석기시대"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,7 +73,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:text="청원 두루봉유적 처녀굴"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,7 +94,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="두루봉 처녀굴에서 출토된 구석기 시대 동굴곰 뼈 화석"/>
             </LinearLayout>
 
             <View
@@ -120,6 +119,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginTop="10dp"
+                android:text="   1980년 두루봉 처녀굴에서 5살된 큰꽃사슴 뿔과 함께 완전한 개체의 동굴곰이 출토되었다.\n\n   큰꽃사슴 뿔을 중앙에 놓고 동굴곰 머리뼈를 남쪽에, 아래턱은 1m 떨어져 엉덩뼈 위에 X로 얹어 놓았으며, 위팔뼈 허벅지뼈 정강이뼈 등 긴 뼈들은 모두 동 서 방향으로 일정하게 놓인 상태로 출토되었다. 이는 곰뼈와 사슴뼈를 의도적으로 배치한 것으로서, 당시에 이곳에서 의식행위가 이루어졌음을 보여주며, 연대 설정의 기준이 되는 표준화석으로서도 중요한 의미를 갖는다."
                 />
 
         </LinearLayout>

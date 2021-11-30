@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Activity_detail"
     android:orientation="vertical">
-    
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:src="@drawable/des1"
+        android:scaleType="centerCrop"
         />
 
     <ScrollView
@@ -24,20 +26,14 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="#FFF">
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/s"
-                android:text="▶ 재생하기"/>
-
-
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="30sp"
-                android:textColor="#000"/>
+                android:textColor="#000"
+                android:text="흥수아이 1호"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +52,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="구석기시대"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,7 +73,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:text="두루봉 흥수굴"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,7 +94,8 @@
                     android:layout_weight="8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"/>
+                    android:textSize="15sp"
+                    android:text="충청북도 청주시 상당구 문의면 노현리의 두루봉 동굴에서 발견된 요귤"/>
             </LinearLayout>
 
             <View
@@ -120,6 +119,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginTop="10dp"
+                android:text="두루봉 흥수굴에서 1982년에 2개체분의 사람뼈가 출토되었다. 거의 완전한 형태로 출토된 흥수아이 1호 사람은 판판한 석회암 판자돌 위 아래에 놓고 바로펴묻기한 상태로 묻었는데, 사람둘레에서 석기와 국화과의 꽃가루가 집중 검출되어 매장의식이 있었음을 알 수 있다. \n\n나이는 5살 정도이고, 뇌 용량은 1,200~1,300cc, 키는 110~120cm 정도이다. 머리뼈는 좁고 길며, 높은 머리형인데 특히 윗머리뼈의 굽은 길이는 매우 길다. 약 4만 년 전에 살았던 것으로 보이는 흥수아이는 현대인과 선사인의 특징을 함께 갖고 있음이 밝혀졌다."
                 />
 
         </LinearLayout>
